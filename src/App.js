@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import emailjs from "emailjs-com";
 import "./App.css";
 import { FaLaptop, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
@@ -11,6 +12,7 @@ import img6 from "./assets/img_6.jpg";
 import img7 from "./assets/img_7.jpg";
 import img8 from "./assets/img_8.jpg";
 
+
 const GalleryComponent = () => {
   const images = [img1, img2, img3, img4, img5, img6, img7, img8];
   const captions = [
@@ -20,7 +22,7 @@ const GalleryComponent = () => {
 
   return (
     <div className="gallery-container">
-      <h1 className="heading">Image Gallery</h1>
+      <h1 className="heading">Abi Image Gallery</h1>
       <div className="gallery">
         {images.map((image, index) => (
           <div key={index} className="image-container">
