@@ -50,7 +50,7 @@ const ContactForm = () => {
     emailjs
       .send(
         "service_064phx6",
-        "template_7utm1ap",
+        "template_tlz4xda",
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -61,7 +61,7 @@ const ContactForm = () => {
       .then((response) => {
         console.log("Message sent successfully", response);
         setStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", message: "" }); // Clear form fields
       })
       .catch((error) => {
         console.error("Failed to send message", error);
